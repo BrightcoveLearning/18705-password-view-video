@@ -20,7 +20,7 @@ videojs.registerPlugin('passwordToView', function(pluginOptions) {
   newElement.setAttribute("style", "display:flex;justify-content:center;align-items:center;");
 
   // Create content for ModalDialog
-  newElement.innerHTML = '<div><h3>Enter your password</h3><br><input class="theForm" type="password" id="passwordInputID"><br><input id="formButtonID" class="theForm" type="submit" value="Sign In"></div>';
+  newElement.innerHTML = '<div class="wrap"><h2>Enter password</h2><br><input class="theFormInput" type="password" id="passwordInputID"><br><input id="formButtonID" class="theForm" type="submit" value="Log In"></div>';
 
   // Be sure user cannot close ModalDialog, set content
   modalOptions.uncloseable = true;
